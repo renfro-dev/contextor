@@ -1,7 +1,7 @@
 {
   "name": "context-orchestrator",
   "version": "1.0.0",
-  "description": "Convert meeting PDFs from OneDrive to Planner and ClickUp tasks",
+  "description": "Automatically convert Fireflies.ai meeting transcripts into actionable tasks with team approval via Microsoft Teams before adding to ClickUp",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -11,18 +11,17 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
-    "server": "tsx src/server.ts",
-    "workflow": "node complete-workflow.js",
-    "manual": "node manual-workflow.js",
-    "process": "node process-pdf.js"
+    "server": "tsx src/server.ts"
   },
   "keywords": [
-    "onedrive",
+    "fireflies",
+    "teams",
     "planner",
     "clickup",
     "task-management",
-    "pdf",
-    "meeting-summary"
+    "meeting-automation",
+    "webhooks",
+    "mcp"
   ],
   "author": "",
   "license": "MIT",
@@ -33,12 +32,10 @@
     "commander": "^13.0.0",
     "dotenv": "^16.4.7",
     "express": "^5.2.1",
-    "inquirer": "^12.0.0",
-    "pdf-parse": "^1.1.1"
+    "inquirer": "^12.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
-    "@types/pdf-parse": "^1.1.4",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0"
   }

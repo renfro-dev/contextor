@@ -6,6 +6,9 @@ dist/
 .DS_Store
 .npm/
 
+# MCP
+.mcp.local.json
+
 # Replit
 .replit.nix
 replit.nix

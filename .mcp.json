@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "ms365-planner": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@softeria/ms-365-mcp-server"],
+      "description": "Microsoft 365 MCP server for Planner integration"
+    },
+    "ms365-teams": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@softeria/ms-365-mcp-server", "--org-mode"],
+      "description": "Microsoft 365 MCP server for Teams integration (requires --org-mode flag)"
+    },
+    "clickup": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@taazkareem/clickup-mcp-server"],
+      "env": {
+        "CLICKUP_API_KEY": "${CLICKUP_API_KEY}",
+        "CLICKUP_TEAM_ID": "${CLICKUP_TEAM_ID}"
+      },
+      "description": "ClickUp MCP server for task management"
+    }
+  }
+}
