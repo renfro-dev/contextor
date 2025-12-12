@@ -2,10 +2,10 @@
 
 Automatically convert Fireflies.ai meeting transcripts into actionable tasks with team approval via Microsoft Teams before adding to ClickUp.
 
-## 🚀 Quick Deploy (5 Minutes)
+## 🚀 Production Deploy (DigitalOcean)
 
-**Deploy to Replit for automatic webhook processing:**
-👉 **[See REPLIT_DEPLOY.md](./REPLIT_DEPLOY.md)** for step-by-step instructions
+We deploy to a cloud server (not local) for reliability and a stable HTTPS URL.
+👉 **[See DIGITALOCEAN_DEPLOY.md](./DIGITALOCEAN_DEPLOY.md)** for the production guide.
 
 ## Features
 
@@ -87,7 +87,7 @@ npm run server
 - `npm run dev -- post-to-teams` - Post tasks to Teams for approval
 - `npm run dev -- check-approvals` - Check approved tasks and create in ClickUp
 
-See **[WEBHOOK_SETUP.md](./WEBHOOK_SETUP.md)** for detailed webhook configuration.
+See **[WEBHOOK_SETUP.md](./WEBHOOK_SETUP.md)** for webhook configuration (uses the cloud server).
 
 ### Manual CLI Mode
 
@@ -102,7 +102,7 @@ Select a meeting from the list and follow the prompts.
 npm start process -- --meeting-id "abc123"
 ```
 
-**Development Mode:**
+**Development Mode (Local – for testing only, not used in production):**
 ```bash
 npm run dev process
 ```

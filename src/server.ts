@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 // Replit uses PORT, fallback to WEBHOOK_PORT or 3000
-const PORT = process.env.PORT || process.env.WEBHOOK_PORT || 3000;
+const PORT: number = Number(process.env.PORT || process.env.WEBHOOK_PORT || 3000);
 const STATE_DIR = path.join(process.cwd(), '.state');
 const PROCESSED_FILE = path.join(STATE_DIR, 'processed-meetings.json');
 

@@ -18,9 +18,10 @@ Tasks Posted to Teams → Team Approves with 👍 → Tasks Created in ClickUp
 
 ## Setup Instructions
 
-### Recommended: Deploy to Replit (Production-Ready)
+### Recommended: Deploy to DigitalOcean (Production)
 
-Replit provides instant deployment with automatic HTTPS, making it perfect for webhooks.
+Use a cloud VM with automatic HTTPS and PM2 for an always-on server.
+👉 Follow **[DIGITALOCEAN_DEPLOY.md](./DIGITALOCEAN_DEPLOY.md)** for full steps.
 
 #### 1. Create a New Repl
 
@@ -106,7 +107,7 @@ https://your-repl.username.repl.co/health
 
 ### Alternative: Local Development/Testing
 
-**For Local Testing Only:**
+**For local testing only (not used in production):**
 ```bash
 npm run server
 ```
